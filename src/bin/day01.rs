@@ -35,7 +35,7 @@ fn part2(a: &[Vec<u64>]) -> u64 {
 }
 
 #[cfg(test)]
-mod day1_tests {
+mod day01_tests {
     use super::*;
 
     fn example_input() -> Vec<Vec<u64>> {
