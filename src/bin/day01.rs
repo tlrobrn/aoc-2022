@@ -29,7 +29,7 @@ fn part1(a: &[Vec<u64>]) -> u64 {
 }
 
 fn part2(a: &[Vec<u64>]) -> u64 {
-    let mut packs = a.iter().map(|pack| pack.iter().sum()).collect::<Vec<u64>>();
+    let mut packs: Vec<u64> = a.iter().map(|pack| pack.iter().sum()).collect();
     packs.sort_unstable();
     packs.iter().rev().take(3).sum()
 }
